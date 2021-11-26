@@ -2,6 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import Title from "./components/Title";
 import Pokemon from "./components/Pokemon";
+import LikeCounter from "./components/LikeCounter";
+import AwesomeAnimals from "./components/AwesomeAnimals";
+import ArticleCard from "./components/AticleCard";
+import ArticleList from "./components/ArticleList";
 
 const all_pokemon = [
   {
@@ -38,7 +42,22 @@ function App() {
   return (
     <div className="App">
       <main className="container my-5">
-        <Title content="Some Simple Title" />
+        <Title content="Pokemons on the bottle and LikeCounter on the Top" />
+        <div>
+          ---------------------------------------------------------------------
+        </div>
+        <ArticleList />
+        <div>
+          ---------------------------------------------------------------------
+        </div>
+        <LikeCounter />
+        <div>
+          ---------------------------------------------------------------------
+        </div>
+        <AwesomeAnimals />
+        <div>
+          ---------------------------------------------------------------------
+        </div>
         <div className="row">
           {all_pokemon.map((x, index) => (
             <Pokemon
